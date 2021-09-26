@@ -41,4 +41,7 @@ yc compute instance create \
   --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
   --metadata serial-port-enable=1 \
   --metadata-from-file user-data=metadata.yml
-ш```
+```
+
+# Дз 7
+Создан json для формирования образа и проведено тестовое создание вм.
