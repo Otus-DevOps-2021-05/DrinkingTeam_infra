@@ -3,15 +3,15 @@
         {
             "type": "yandex",
             "zone": "ru-central1-a",
-            "service_account_key_file": "`service_account_key_file`",
-            "folder_id": "`folder_id`",
+            "service_account_key_file": "{{user `service_account_key_file`}}",
+            "folder_id": "{{user `folder_id`}}",
             "source_image_family": "ubuntu-1604-lts",
-            "image_name": "`image_source_id``",
+            "image_name": "{{user `image_source_id`}}",
             "image_family": "reddit-base",
             "ssh_username": "ubuntu",
             "platform_id": "standard-v1",
             "use_ipv4_nat": true,
-            "subnet_id": "`subnet_id`"
+            "subnet_id": "{{user `subnet_id`}}"
         }
     ],
     "provisioners": [
