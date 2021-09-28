@@ -1,7 +1,0 @@
-cloud_id                 = "123"
-folder_id                = "123"
-image_id                 = "123"
-service_account_key_file = "~/yc-keys/key.json"
-subnet_id                = "123"
-public_key_path          = "~/.ssh/appuser.pub"
-connection_key_file      = "~/.ssh/appuser"
