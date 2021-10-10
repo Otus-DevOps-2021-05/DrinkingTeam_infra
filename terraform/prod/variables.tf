@@ -17,13 +17,19 @@ variable "service_account_key_file" {
 variable "subnet_id" {
   description = "Subnet id"
 }
-variable "image_id" {
-  description = "Image id"
-}
 variable "connection_key_file" {
   description = "Ssh connection key file"
+  default = "~/ssh/appuser"
 }
 variable "app_zone" {
   description = "App zone"
   default     = "ru-central1-a"
+}
+variable "app_disk_image" {
+  description = "Disk image for reddit app"
+  default     = "reddit-app-base"
+}
+variable "db_disk_image" {
+  description = "Disk image for reddit db"
+  default     = "reddit-db-base"
 }
