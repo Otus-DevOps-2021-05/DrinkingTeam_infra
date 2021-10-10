@@ -19,6 +19,7 @@ variable "subnet_id" {
 }
 variable "connection_key_file" {
   description = "Ssh connection key file"
+  default = "~/ssh/appuser"
 }
 variable "app_zone" {
   description = "App zone"

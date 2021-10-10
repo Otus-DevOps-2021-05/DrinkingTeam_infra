@@ -12,3 +12,6 @@ variable "public_key_path" {
 variable "subnet_id" {
   description = "Subnet id"
 }
+variable "connection_key_file" {
+  description = "Ssh connection key file"
+}
