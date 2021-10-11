@@ -1,0 +1,6 @@
+{
+    "image_source_id": "reddit-db-{{timestamp}}",
+    "folder_id": "b1gur7dn2pgcmih9e6q7",
+    "subnet_id": "e9boarnj7cna0dhq13l5",
+    "service_account_key_file": "/home/dds/yc-keys/key.json"
+}
