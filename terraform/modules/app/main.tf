@@ -31,12 +31,12 @@ resource "yandex_compute_instance" "app" {
     private_key = file(var.connection_key_file)
   }
 
-  provisioner "file" {
-    source      = "../modules/app/files/puma.service"
-    destination = "/tmp/puma.service"
-  }
+#  provisioner "file" {
+#    source      = "../modules/app/files/puma.service"
+#    destination = "/tmp/puma.service"
+#  }
 
-  provisioner "remote-exec" {
-    script = "../modules/app/files/deploy.sh"
-  }
+#  provisioner "remote-exec" {
+#    script = "../modules/app/files/deploy.sh"
+#  }
 }
