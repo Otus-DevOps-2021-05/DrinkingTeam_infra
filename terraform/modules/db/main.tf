@@ -1,6 +1,7 @@
 resource "yandex_compute_instance" "db" {
   name = "reddit-db"
   zone = var.zone
+  allow_stopping_for_update = true
 
   resources {
     cores         = 2
@@ -17,6 +18,7 @@ resource "yandex_compute_instance" "db" {
   network_interface {
     subnet_id = var.subnet_id
     nat       = true
+    ip_address = "192.168.10.12"
   }
 
   metadata = {

@@ -1,0 +1,7 @@
+---
+- name: restart mongod
+  become: true
+  service:
+    daemon_reload: true
+    name: mongod
+    state: restarted
